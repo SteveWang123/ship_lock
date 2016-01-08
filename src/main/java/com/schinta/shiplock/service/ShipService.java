@@ -9,5 +9,5 @@ import java.util.Map;
 public interface ShipService {
 
     /*获取所有系统默认的船型*/
-    public List<Map<String, Object>> getShipCategories();
+    public List<Map<String, Object>> getDftShipCategories();
 }

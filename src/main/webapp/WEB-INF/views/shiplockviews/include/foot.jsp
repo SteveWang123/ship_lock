@@ -69,3 +69,15 @@ window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>" 
 <script src="<c:url value="/resources/vendor/ace/assets/js/ace-elements.min.js"/>"></script>
 <script src="<c:url value="/resources/vendor/ace/assets/js/ace.min.js"/>"></script>
 
+<!--jquery-ui-->
+<script src="<c:url value="/resources/vendor/ace/assets/js/jquery-ui-1.10.3.full.min.js"/>"></script>
+<script src="<c:url value="/resources/vendor/ace/assets/js/jquery.ui.touch-punch.min.js"/>"></script>
+
+<!--log function-->
+<script>
+
+  showMessage = function(msg){
+    console.log(msg);
+  }
+
+</script>

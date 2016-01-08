@@ -28,4 +28,7 @@ public interface SchemeDao {
 
     /*查找所有方案*/
     public List<Map<String, Object>> querySchemeList();
+
+    /*获取系统默认的艘次按月占比*/
+    public List<Map<String, Object>> queryDftPmonth();
 }

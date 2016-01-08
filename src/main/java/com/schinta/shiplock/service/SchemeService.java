@@ -15,11 +15,12 @@ public interface SchemeService {
     public void saveScheme(Scheme scheme, List<ShipLock> shipLocks);
 
     /*获取方案列表
-    * @param: cnt:待查找的方案的最大个数
+    * @param  cnt 查找的方案的最大个数
     * */
     public List<Scheme> getSchemes(int cnt);
 
-
+    /*获取系统内的默认的艘次按月占比*/
+    public List<Map<String, Object>> getDftPmonth();
 
 
 }

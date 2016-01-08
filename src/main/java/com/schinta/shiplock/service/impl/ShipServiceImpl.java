@@ -24,7 +24,7 @@ public class ShipServiceImpl   implements ShipService {
 
     @Transactional(readOnly = true)
     @Override
-    public List<Map<String, Object>> getShipCategories() {
-        return shipDao.queryShipCategories();
+    public List<Map<String, Object>> getDftShipCategories() {
+        return shipDao.queryDftShipCategories();
     }
 }

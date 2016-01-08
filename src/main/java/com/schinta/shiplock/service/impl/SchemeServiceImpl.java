@@ -82,4 +82,9 @@ public class SchemeServiceImpl  implements SchemeService {
         logger.debug(schemes.toString());
         return schemes;
     }
+
+    @Override
+    public List<Map<String, Object>> getDftPmonth() {
+        return schemeDao.queryDftPmonth();
+    }
 }

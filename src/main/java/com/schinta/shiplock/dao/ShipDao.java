@@ -10,5 +10,5 @@ import java.util.Map;
 public interface ShipDao {
 
     /*获取系统默认的船型数据*/
-    public List<Map<String, Object>> queryShipCategories();
+    public List<Map<String, Object>> queryDftShipCategories();
 }

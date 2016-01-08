@@ -166,4 +166,10 @@ public class SchemeDaoImpl extends AbstractDao implements SchemeDao {
                 "    ORDER BY scheme.create_time DESC, pmonth.month ASC";
         return getJdbcTemplate().queryForList(sql);
     }
+
+    @Override
+    public List<Map<String, Object>> queryDftPmonth() {
+        String sql = "SELECT * FROM tb_pmonth WHERE default_value = 1";
+        return getJdbcTemplate().queryForList(sql);
+    }
 }

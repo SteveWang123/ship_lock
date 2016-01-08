@@ -19,7 +19,7 @@ public class ShipDaoImpl extends AbstractDao implements ShipDao {
     }
 
     @Override
-    public List<Map<String, Object>> queryShipCategories() {
+    public List<Map<String, Object>> queryDftShipCategories() {
         String sql = "SELECT * FROM tb_ship WHERE default_value = 1";
         return getJdbcTemplate().queryForList(sql);
     }
